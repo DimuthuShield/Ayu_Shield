@@ -39,9 +39,12 @@ class Body extends StatelessWidget {
               hintText: "Last Name",
               onChanged: (value) {},
             ),
-            RoundedInputField1(
+            RoundedInputField(
+              //? I dont understant why you are using a different input field in this page.
+              //? I changed it to one in previous one
               hintText: "Age",
               onChanged: (value) {},
+              keyboardType: TextInputType.number,
             ),
             RoundedButton(
               text: "Let's Get Started",

@@ -23,18 +23,19 @@ class Body extends StatelessWidget {
           children: <Widget>[
             Text(
               "LOGIN",
-              style: TextStyle(fontWeight: FontWeight.bold,
-               fontSize: 40.0),
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 40.0),
             ),
             SizedBox(height: size.height * 0.1),
-                Text('The code word is ‘Rochambeau,’ dig me?'),
-                Text('The code word is ‘Rochambeau,’ dig me?'),
-                Text('The code word is ‘Rochambeau,’ dig me?'),
-                SizedBox(height: size.height * 0.1),
-                Text('The code word is ‘Rochambeau,’ dig me?'),
-                Text('The code word is ‘Rochambeau,’ dig me?'),
-                Text('Rochambeau!', style: DefaultTextStyle.of(context).style.apply(fontSizeFactor: 2.0)),
-
+            Text('The code word is ‘Rochambeau,’ dig me?'),
+            Text('The code word is ‘Rochambeau,’ dig me?'),
+            Text('The code word is ‘Rochambeau,’ dig me?'),
+            SizedBox(height: size.height * 0.1),
+            Text('The code word is ‘Rochambeau,’ dig me?'),
+            Text('The code word is ‘Rochambeau,’ dig me?'),
+            Text('Rochambeau!',
+                style: DefaultTextStyle.of(context)
+                    .style
+                    .apply(fontSizeFactor: 2.0)),
             SizedBox(height: size.height * 0.1),
             CountryCodePicker(
               initialSelection: 'LK',
@@ -43,6 +44,7 @@ class Body extends StatelessWidget {
             RoundedInputField(
               hintText: "Phone Number",
               onChanged: (value) {},
+              keyboardType: TextInputType.phone,
             ),
             RoundedButton(
               text: "SUBMIT",

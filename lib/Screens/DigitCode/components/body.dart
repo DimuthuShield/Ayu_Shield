@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_auth/Screens/DigitCode/components/background.dart';
 import 'package:flutter_auth/Screens/Signup/signup_screen.dart';
-import 'package:flutter_auth/components/already_have_an_account_acheck.dart';
 import 'package:flutter_auth/components/rounded_button.dart';
 import 'package:flutter_auth/Screens/DigitCode/components/otp_field.dart';
 import 'package:flutter_auth/Screens/DigitCode/components/style.dart';
@@ -19,7 +18,6 @@ class Body extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            
             SizedBox(height: size.height * 0.03),
             Image.asset(
               "assets/images/otp.png",
@@ -41,7 +39,7 @@ class Body extends StatelessWidget {
                 print("Completed: " + pin);
               },
             ),
-             SizedBox(height: size.height * 0.07),
+            SizedBox(height: size.height * 0.07),
             RoundedButton(
               text: "SUBMIT",
               press: () {

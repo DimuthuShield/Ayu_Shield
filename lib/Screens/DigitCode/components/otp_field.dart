@@ -12,7 +12,7 @@ class OTPTextField extends StatefulWidget {
   final double fieldWidth;
 
   /// Manage the type of keyboard that shows up
-  TextInputType keyboardType;
+  final TextInputType keyboardType;
 
   /// The style to use for the text being edited.
   final TextStyle style;
